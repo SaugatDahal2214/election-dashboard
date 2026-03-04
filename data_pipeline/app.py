@@ -26,7 +26,7 @@ st.markdown(
 # -----------------------
 leaders_df = pd.read_csv("data_pipeline/leader_mci_v2_results.csv")
 parties_df = pd.read_csv("data_pipeline/party_mci_v2_results.csv")
-news_df = pd.read_csv("news_with_clean_tracking.csv")
+news_df = pd.read_csv("data_pipeline/news_with_clean_tracking.csv")
 
 news_df["published_date"] = pd.to_datetime(news_df["published_date"], errors="coerce")
 news_df = news_df.dropna(subset=["published_date"])
