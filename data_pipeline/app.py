@@ -24,8 +24,8 @@ st.markdown(
 # -----------------------
 # Load Data
 # -----------------------
-leaders_df = pd.read_csv("leader_mci_v2_results.csv")
-parties_df = pd.read_csv("party_mci_v2_results.csv")
+leaders_df = pd.read_csv("data_pipeline/leader_mci_v2_results.csv")
+parties_df = pd.read_csv("data_pipeline/party_mci_v2_results.csv")
 news_df = pd.read_csv("news_with_clean_tracking.csv")
 
 news_df["published_date"] = pd.to_datetime(news_df["published_date"], errors="coerce")
